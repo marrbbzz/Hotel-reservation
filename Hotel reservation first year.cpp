@@ -20,7 +20,7 @@ struct Client
     int roomnumb;
 };
 
-vector<Client> client(4);
+vector<Client> client(400);
 // vectors are basically arrays that can change their size => in this program im able to store clients' bookings
 // the amount of variables must be inside the brackets.
 
@@ -55,7 +55,7 @@ float calculatetheprice(float, int, float);                            // Return
 void checkout(vector<Room>&, vector<Client>&);                         // Check out for the client and prints invoice and sets the room available for other clients.
 void Invoice(vector<Room>, vector<Client>, int);                       // Prints an invoice to the user with their information of the reservation.
 
-vector<Room> hotel(6);
+vector<Room> hotel(400);
 // there needs to be 6 inside the vector thingie cuz it works that way and otherwise it doesn't work idk
 void Invoice(vector<Room> hotel, vector<Client> client, int room);
 
